@@ -7,7 +7,7 @@ appEx.directive('expandedMenu', function(){
     return{
         restrict: 'EA',
         replace: true,
-        templateUrl:'./views/submenu.html',
+        templateUrl:'./views/expandedMenu.html',
         transclude: true,
         link:function(scope,element,attr){
             scope.toggle=function(){
