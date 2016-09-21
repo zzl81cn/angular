@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="appEx">
+<head lang="en">
+    <meta charset="utf-8">
+    <script src="angular.js"></script>
+    <script src="myDirective.js"></script>
+    <title></title>
+    <style>
+        *{
+            font-size:12px;
+            font-family:'MICROSOFT YAHEI';
+            color:#005580;
+        }
+        .submenu span {
+            border:1px solid #EFEFEF;
+            background:#F7F7F7;
+            padding:4px 8px;
+            cursor:pointer
+        }
+        .submenu ul li{
+            color:#169FE7
+        }
+
+    </style>
+</head>
+<body>
+    <div ng-controller="appEx">
+        <expanded-Menu>
+            <li ng-repeat="list in lists">{{list}}</li>
+        </expanded-Menu>
+    </div>
+</body>
+</html>
